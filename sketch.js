@@ -29,7 +29,7 @@ function draw(){
     Engine.update(engine);
 
     rain.push(new Rain(random(0,1280),0,random(2,7)));
-    if(frameCount % 90 == 0){
+    if(frameCount % 60 == 0){
         image(light,random(280,1080),random(0,10),100,180);
     }
     for(var x = 0;x < rain.length; x++){
